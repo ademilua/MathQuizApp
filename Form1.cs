@@ -237,12 +237,12 @@ namespace TMathQuiz
         {
             if (dividend / divisor == quotient.Value)
             {
-                System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"c:\yes.wav");
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"c:\yes.wav");// if the user solution is right say yes
                 player.Play();
             }
             else if (dividend / divisor != quotient.Value)
             {
-                System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"c:\ak47.wav");
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"c:\ak47.wav"); // If the user solution is wrong shoot
                 player.Play();
 
             }
